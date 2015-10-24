@@ -15,7 +15,8 @@
         android:mirrorForRtl="false"
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentTop="true" />
+        android:layout_alignParentTop="true"
+        android:progressTint="#00CC00" />
 
     <ListView
         android:layout_width="wrap_content"
@@ -32,7 +33,7 @@
         android:id="@+id/createBtn"
         android:layout_alignParentBottom="true"
         android:layout_alignParentStart="true"
-        android:onClick="createFile" />
+        android:onClick="createClick" />
 
     <Button
         android:layout_width="wrap_content"
@@ -41,7 +42,7 @@
         android:id="@+id/loadBtn"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:onClick="loadFile" />
+        android:onClick="loadClick" />
 
     <Button
         android:layout_width="wrap_content"
@@ -50,5 +51,5 @@
         android:id="@+id/clearBtn"
         android:layout_alignParentBottom="true"
         android:layout_alignParentEnd="true"
-        android:onClick="clearFile" />
+        android:onClick="clearClick" />
 </RelativeLayout>
