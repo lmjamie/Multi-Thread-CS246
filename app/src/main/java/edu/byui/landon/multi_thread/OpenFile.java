@@ -57,6 +57,7 @@ public class OpenFile extends AppCompatActivity {
     }
 
     public void createClick(View v) { new CreateFileTask().execute(getFilesDir() + "/number.txt"); }
+
     private class LoadFileTask extends AsyncTask<String, Integer, Void> {
         ArrayList<Integer> list = new ArrayList<>();
 
@@ -96,7 +97,6 @@ public class OpenFile extends AppCompatActivity {
         }
     }
     public void loadClick(View v) { new LoadFileTask().execute(getFilesDir() + "/number.txt"); }
-
 
     public void clearClick(View v) {
         adapter.clear();
